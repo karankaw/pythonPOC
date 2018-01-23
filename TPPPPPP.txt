@@ -1,0 +1,225 @@
+Exception handling in Python
+try-except
+try-except-else
+try-except-finally
+
+raise
+assert
+customExceptions
+---------------------------------------------------------
+Tuples - Parenthesis optional ???
+Yes
+---------------------------------------------------------
+if () - optional ???
+Yes.
+https://stackoverflow.com/questions/4740419/parentheses-in-python-conditionals/4740493#4740493
+---------------------------------------------------------
+with ???
+
+---------------------------------------------------------
+Iterate over list, dictionary
+
+---------------------------------------------------------
+Can we have a function inside function in Python
+---------------------------------------------------------
+self - Whats it means in python
+---------------------------------------------------------
+manipulating List
+http://www.dummies.com/programming/python/how-to-modify-lists-in-python/
+
+manipulating dictionary
+http://www.dummies.com/programming/python/how-to-create-and-use-a-dictionary-in-python/
+
+sorted ?? dictionary
+
+----------------------------------------------------------
+packages modules
+__init.py ????
+https://stackoverflow.com/questions/7948494/whats-the-difference-between-a-python-module-and-a-python-package
+----------------------------------------------------------
+Python Style Guidlines - Conventions - Naming
+https://www.python.org/dev/peps/pep-0008/
+----------------------------------------------------------
+CapitalisedWords/Capwords - Classes, Type
+smallcase - moduleName, packageName
+smallCase with underscore - functionName
+capitalCase with underscore - constants
+default parameter no space around equals sign
+assignment space around equals sign
+joined small case - variables
+---------------------------------------------------------
+Matrix Multiplication
+Dot Product
+---------------------------------------------------------
+null ? None ??
+is not
+https://stackoverflow.com/questions/3289601/null-object-in-python
+
+---------------------------------------------------------
+Redefining the same function
+https://stackoverflow.com/questions/23154893/python-why-redefinition-of-a-function-is-not-an-error-is-there-a-hackish-way-t
+
+---------------------------------------------------------
+class ??
+object Instantiation ???
+
+---------------------------------------------------------
+== and is
+https://dbader.org/blog/difference-between-is-and-equals-in-python
+---------------------------------------------------------
+Truth Value Testing
+http://csparpa.github.io/blog/2015/02/python-truthiness.html
+
+Checking for 
+Anything which can be put inside IF clause
+bool(something)  = True
+
+---------------------------------------------------------
+help()
+help(OBJECT)
+---------------------------------------------------------
+type()
+
+In [120]: type("")
+Out[120]: str
+
+In [121]: type(123.04)
+Out[121]: float
+
+In [122]: type(True)
+Out[122]: bool
+---------------------------------------------------------
+http://www.pythonforbeginners.com/basics/python-docstrings
+python docstring - Ist Line after start of function Name
+"""
+Comments Here, Spaces are counted
+MultiLine Comments
+"""
+
+object.__doc__ displays 
+
+--------------------------------------------------------
+whats difference between print(String)
+
+---------------------------------------------------------
+arguments Python 
+Positional Arguements
+Named Arguments
+Optional Argument Starred Args
+---------------------------------------------------------
+mangle __ double underscore
+prefix className
+---------------------------------------------------------
+
+Difference between Python 2 vs Python 3 ???
+print "PrintMe"      print("PrintMe")
+input("")            raw_input("")
+
+---------------------------------------------------------
+nested Functions
+
+Yes.
+---------------------------------------------------------
+iterator List dictionary set ??
+
+---------------------------------------------------------
+set Datastructure python ??? Frozensets ???
+
+https://www.geeksforgeeks.org/sets-in-python/
+---------------------------------------------------------
+By default, Every function of Python returns "None"
+---------------------------------------------------------
+String operations
+---------------------------------------------------------
+Escape Character in String
+---------------------------------------------------------
+5 + "" >> Exception
+"" + 5 >> Exception
+---------------------------------------------------------
+https://stackoverflow.com/questions/2710940/python-if-x-is-not-none-or-if-not-x-is-none
+---------------------------------------------------------
+>>cd D:\Python-WS
+pwd 
+IPython Console
+----X--------------X-----------X--------X-----------X---------X
+overriding in-built functions of python
+How can i get it back ?
+Yes, we can override in-built functions and modules in python
+
+https://stackoverflow.com/questions/20885760/how-to-get-back-an-overridden-python-built-in-function/20885776#20885776
+---------------------------------------------------------
+del 
+del is a statement which deletes variables altogether
+del <variable_name>
+https://stackoverflow.com/questions/6146963/when-is-del-useful-in-python
+
+---------------------------------------------------------
+__builtin__.set __builtin__.print
+If U want to refer to original built-in function name in case of name collision, use this to refer
+
+---------------------------------------------------------
+PEP8
+https://stackoverflow.com/questions/159720/what-is-the-naming-convention-in-python-for-variable-and-function-names/160830#160830
+---------------------------------------------------------
+from __future__ import 
+__future__ module ?????
+
+---------------------------------------------------------
+/ vs // in Python ???
+---------------------------------------------------------
+PEP 20 -- The Zen of Python 
+
+---------------------------------------------------------
+from __future__ import * 
+from module import __all__
+https://shahriar.svbtle.com/importing-star-in-python
+https://stackoverflow.com/questions/35463970/how-does-the-future-module-work-in-python-2-7?noredirect=1&lq=1
+---------------------------------------------------------
+double underscore and single underscore
+https://shahriar.svbtle.com/underscores-in-python
+_singleUnderscoreBeforeName
+__DoubleUnderscoreBeforeName
+__DoubleUnderscoreBeforeAndAfterName__
+
+---------------------------------------------------------
+dir in Python ????
+
+---------------------------------------------------------
+as ??? in import in python ???
+---------------------------------------------------------
+what does import does ????? 
+https://stackoverflow.com/questions/9439480/from-import-vs-import
+---------------------------------------------------------
+Package module function class ????
+
+---------------------------------------------------------
+python2.global_var ===>AttributeError ???
+attribute in Module
+---------------------------------------------------------
+Don't use from import * - Bad Practice
+https://docs.python.org/2/howto/doanddont.html#from-module-import
+https://stackoverflow.com/questions/17255737/importing-variables-from-another-file/17255749#17255749
+---------------------------------------------------------
+locals() and globals() namespace dicts look like ???
+
+locals()
+
+---------------------------------------------------------
+Multiple Assignment ??
+---------------------------------------------------------
+Using a for loop, how do I access the loop index, from 1 to 5 in this case?  
+---------------------------------------------------------
+Why using ; does not give any error in Python ??
+https://docs.python.org/3/reference/compound_stmts.html#compound-statements
+---------------------------------------------------------
+Difference between io.open() and sys.open
+https://stackoverflow.com/questions/7219511/whats-the-difference-between-io-open-and-os-open-on-python/7219535#7219535
+---------------------------------------------------------
+types of Arguments in a function in python ???
+https://www.tutorialspoint.com/python/python_functions.htm
+
+---------------------------------------------------------
+USEFUL LINKSS : 
+
+https://www.geeksforgeeks.org/global-local-variables-python/
+https://docs.python.org/3/library/functions.html

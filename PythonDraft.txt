@@ -1,0 +1,26 @@
+https://docs.python.org/3/tutorial/errors.html#raising-exceptions
+https://docs.python.org/3/tutorial/errors.html#user-defined-exceptions
+
+https://airbrake.io/blog/python-exception-handling/class-hierarchy
+--------------------------------------------------------------
+https://docs.python.org/3/reference/datamodel.html
+__file__ (module's Attributes)
+
+__name__ (Function's, Object's Attributes)
+
+__class__(Class's attributes)
+--------------------------------------------------------------
+mro # Method Resolution Order
+type(object).mro()
+
+--------------------------------------------------------------
+https://www.programiz.com/python-programming/methods/built-in/super
+
+
+--------------------------------------------------------------
+Super/Multiple Inheritance ?????
+
+https://stackoverflow.com/questions/222877/what-does-super-do-in-python
+http://www.pythonforbeginners.com/super/working-python-super-function
+https://www.digitalocean.com/community/tutorials/understanding-class-inheritance-in-python-3
+--------------------------------------------------------------
