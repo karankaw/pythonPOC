@@ -4,6 +4,7 @@
 
 import tensorflow as tf
 import numpy as np
+import os
 
 var = tf.Variable([1,2,3])
 scalar  = 100
@@ -35,4 +36,5 @@ with tf.Session() as sess:
     result  = sess.run(add, feed_dict={placebo: sess.run(const)}) # sess.run() Works!! with PH-shape []
     print(result)
     
+print(os.path.dirname(os.path.realpath(__file__)))
     
