@@ -31,3 +31,6 @@ with tf.Session() as sess:
 
 
 print(var2.eval(session=tf.Session()))
+
+listu = [[1,2,3]] # 2 Dimensional - 2 Square Brackets
+# can be handled by listu[0][2]
