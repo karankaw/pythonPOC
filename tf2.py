@@ -5,14 +5,18 @@ Created on Wed Jan 17 13:01:11 2018
 @author: 10640691
 """
 
+
+
 import tensorflow as tf
+tf1Constant = tf.constant(dtype=tf.int32, value=123)
 
-tensor1 = tf.constant([1,2,3,4,5,6], shape=[2,3], dtype=tf.int32)
-tensor2 = tf.constant([1,2,3,4,5,6], shape=[3,2], dtype=tf.int32)
+print(tf1Constant)
 
-
-result = tf.matmul(tensor1, tensor2)
-
-with tf.Session() as session:
-	o_p = session.run(result)
-	print(type(o_p))
+def openfunc(name=None, pos_default=None):
+    print(pos_default, name)
+    
+    
+def func(name, burra, pos):
+    print(pos, name)
+    print(burra)
+    
