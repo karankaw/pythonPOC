@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+# imports
+
+import numpy as np;
+import pandas as pd;
+import matplotlib.pyplot as plt;
+import sklearn
+import pylab as pl
+
+#Import data set
+dataset = pd.read_csv("D:\\Python-WS\\practice-examples-3\\Credit_Card_Applications.csv");
+
+#print(dataset);
+
+# Features
+X = dataset.iloc[:,1:14].values
+
+# Labels
+Y = dataset.iloc[:,15:16].values
+
+#print(X);
+#print(Y);
+
+#  Train test split
+from sklearn.cross_validation import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=0.2, random_state=0);
+
+# Logistic regression
+from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression();
+classifier.fit(X_train,Y_train);
+
+# Predict fraud
+Y_pred = classifier.predict(X_test);
+
+# Check  the confusion matrix
+from sklearn.metrics import confusion_matrix
+#cm =  confusion_matrix(Y_test, Y_pred)
+
+
+
