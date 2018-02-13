@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Feb  6 17:45:47 2018
+
+@author: 10635683
+"""
+
+
+import numpy as np;
+import pandas as pd;
+import matplotlib.pyplot as plt;
+import sklearn
+import pylab as pl
+
+
+# Create an imputer
+
+from sklearn.preprocessing import Imputer
+imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
+
+#Import data set
+full_dataset = pd.read_csv( "D:\\Python-WS\\practice-examples-4\\train_u6lujuX_CVtuZ9i.csv" , nrows = 10000 );
+
+#print( full_dataset); 
+
+# Consider a smaller dataset
+X_dataset = full_dataset.iloc[:,1:12]
+print( X_dataset );
+
+# Impute NAN values
+X_dataset['ApplicantIncome'].fillna((X_dataset['ApplicantIncome'].mean()), inplace=True)
+
+X_dataset['CoapplicantIncome'].fillna((X_dataset['CoapplicantIncome'].mean()), inplace=True)
+
+X_dataset['LoanAmount'].fillna((X_dataset['LoanAmount'].mean()), inplace=True)
+
+X_dataset['Loan_Amount_Term'].fillna((X_dataset['Loan_Amount_Term'].mean()), inplace=True)
+
+X_dataset['Credit_History'].fillna((X_dataset['Credit_History'].mean()), inplace=True)
+
+
+#Do one hot encoding
+cols_to_transform = [ 'Gender' , 'Married' ,'Dependents','Education','Self_Employed','Property_Area']
+X_dataset_with_dummies = pd.get_dummies( X_dataset , columns = cols_to_transform )
+
+print( X_dataset_with_dummies );
+
+# Consider a smaller dataset
+Y_dataset = full_dataset.iloc[:,12:13]
+#print( Y_dataset );
+
+cols_to_transform = [ 'Loan_Status']
+Y_dataset_with_dummies = pd.get_dummies( Y_dataset , columns = cols_to_transform )
+print(Y_dataset_with_dummies);
+
+#  Train test split
+from sklearn.cross_validation import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split( X_dataset_with_dummies, Y_dataset_with_dummies ,test_size=0.2, random_state=0);
+
+
+
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors=5);
+# Fit
+knn.fit(X_train,Y_train);
+# Predict
+y_pred = knn.predict(X_test);
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_pred,Y_test);
+
