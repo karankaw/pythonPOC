@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[38]:
+# In[1]:
 
 
 #2nd CSV Example, In this we will use imputer and strategy
@@ -25,14 +25,14 @@ hot_encoded_x_dataset =  pd.get_dummies(data=x_dataset, columns=column_list)
 hot_encoded_x_dataset #All are numbers now
 
 
-# In[40]:
+# In[2]:
 
 
 new_cols = hot_encoded_x_dataset.columns
 new_cols
 
 
-# In[41]:
+# In[3]:
 
 
 #imputer = Imputer(missing_values=np.NaN, axis=0, strategy='mean')

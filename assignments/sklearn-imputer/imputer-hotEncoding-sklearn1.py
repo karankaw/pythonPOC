@@ -11,28 +11,28 @@ full_dataset = pd.read_csv('train_u6lujuX_CVtuZ9i.csv')
 full_dataset
 
 
-# In[ ]:
+# In[9]:
 
 
 X_dataset = full_dataset.iloc[ :,1:12]
 X_dataset
 
 
-# In[62]:
+# In[4]:
 
 
 print(full_dataset.columns)
 len(full_dataset.columns)
 
 
-# In[ ]:
+# In[10]:
 
 
 Y_dataset = full_dataset.iloc[:, 12:13]
 Y_dataset
 
 
-# In[57]:
+# In[11]:
 
 
 X_dataset.head(20)
@@ -61,41 +61,41 @@ X_dataset['Credit_History']
 X_dataset.mean()
 
 
-# In[60]:
+# In[12]:
 
 
 X_dataset['ApplicantIncome'].mean()
 
 
-# In[58]:
+# In[13]:
 
 
 print(X_dataset['ApplicantIncome'].head(20))
 
 
-# In[59]:
+# In[14]:
 
 
 X_dataset['ApplicantIncome'].fillna(X_dataset['ApplicantIncome'].mean() ,inplace=True)
 print(X_dataset['ApplicantIncome'].head(20))
 
 
-# In[63]:
+# In[16]:
 
 
 X_dataset['CoapplicantIncome'].fillna(X_dataset['CoapplicantIncome'].mean() ,inplace=True)
 X_dataset['LoanAmount'].fillna(X_dataset['LoanAmount'].mean() ,inplace=True)
 X_dataset['Loan_Amount_Term'].fillna(X_dataset['Loan_Amount_Term'].mean() ,inplace=True)
-X_dataset['Credit_History'].fillna(X_dataset['Credit_History'].mean() ,inplace=True)b
+X_dataset['Credit_History'].fillna(X_dataset['Credit_History'].mean() ,inplace=True)
 
 
-# In[64]:
+# In[17]:
 
 
 X_dataset.head(20)
 
 
-# In[65]:
+# In[18]:
 
 
 cols_to_hotEncode = ['Gender', 'Married', 'Dependents', 'Education', 'Self_Employed', 'Property_Area']
