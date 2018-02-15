@@ -11,6 +11,10 @@ http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Imputer.h
 http://scikit-learn.org/stable/auto_examples/plot_missing_values.html#sphx-glr-auto-examples-plot-missing-values-py
 https://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/pima-indians-diabetes.data
 http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame
+http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+https://stackoverflow.com/questions/43302400/deprecation-warnings-from-sklearn
+
 
 jupyter nbconvert --to python [notebook_name].ipynb
 
