@@ -20,3 +20,9 @@ pandas_dates
 pandas_dates = pd.date_range(start='20181201', end='20181231')
 pandas_dates
 
+
+# In[15]:
+
+
+pd.Series([1,'a', np.nan,True])
+
