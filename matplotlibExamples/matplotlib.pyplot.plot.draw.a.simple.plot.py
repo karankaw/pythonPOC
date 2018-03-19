@@ -1,6 +1,12 @@
 
 # coding: utf-8
 
+# In[ ]:
+
+
+#https://matplotlib.org/users/pyplot_tutorial.html
+
+
 # In[16]:
 
 
