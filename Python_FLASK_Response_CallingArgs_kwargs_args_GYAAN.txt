@@ -1,0 +1,63 @@
+print(*obj, file=sys.stderr
+            file=sys.stdout
+
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+https://docs.python.org/3/library/functions.html#print
+
+return Response(xml, mimetype='text/xml')
+
+
+
+
+https://stackoverflow.com/questions/10434599/how-to-get-data-received-in-flask-request
+
+https://stackoverflow.com/questions/32550487/how-to-print-from-flask-app-route-to-python-console
+
+https://stackoverflow.com/questions/20180543/how-to-check-version-of-python-modules
+
+https://stackoverflow.com/questions/20762662/whats-the-correct-way-to-sort-python-import-x-and-from-x-import-y-statement#
+
+https://pypi.python.org/pypi/isort/
+
+---------------------------------------------------------------------------
+https://stackoverflow.com/questions/379906/how-do-i-parse-a-string-to-a-float-or-int-in-python
+
+In [1]: s = '123'
+
+In [2]: int(s)
+Out[2]: 123
+---------------------------------------------------------------------------
+https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
+
+In [4]: def func2(**kwargs):
+   ...:     print(kwargs)
+   ...:
+
+In [6]: func2(a=123,b=456)
+{'a': 123, 'b': 456}
+
+In [7]: dictu = {'a': 123, 'b': 456}
+In [9]: func2(dictu)
+TypeError                                 Traceback (most recent call last)
+<ipython-input-9-77460f90e26b> in <module>()
+----> 1 func2(dictu)
+TypeError: func2() takes 0 positional arguments but 1 was given
+In [10]: func2(**dictu)
+{'a': 123, 'b': 456}
+---------------------------------------------------------------------------
+In [11]: def func2(a,b):
+    ...:     print(a)
+    ...:     print(b)
+    ...:
+
+In [12]: dictu = {'b': 123, 'a': 456}
+
+In [13]: func2(*dictu)
+b
+a
+---------------------------------------------------------------------------
+In [14]: func2(**dictu)
+456
+123
+
+
